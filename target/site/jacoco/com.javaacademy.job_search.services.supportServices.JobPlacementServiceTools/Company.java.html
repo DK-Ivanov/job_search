@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Company.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">job_search</a> &gt; <a href="index.source.html" class="el_package">com.javaacademy.job_search.services.supportServices.JobPlacementServiceTools</a> &gt; <span class="el_source">Company.java</span></div><h1>Company.java</h1><pre class="source lang-java linenums">package com.javaacademy.job_search.services.supportServices.JobPlacementServiceTools;
+
+import lombok.*;
+
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
+
+<span class="pc bpc" id="L10" title="1 of 2 branches missed.">@RequiredArgsConstructor</span>
+public class Company {
+    @NonNull private String name;
+<span class="fc" id="L13">    @Getter</span>
+    private List&lt;Vacancy&gt; vacancies = new ArrayList&lt;&gt;();
+
+    public void createVacancy(String positions, String description, BigDecimal salary, String currency) {
+<span class="fc" id="L17">        vacancies.add(new Vacancy(positions, description, salary, currency));</span>
+<span class="fc" id="L18">    }</span>
+
+    @Override
+    public boolean equals(Object o) {
+<span class="pc bpc" id="L22" title="1 of 2 branches missed.">        if (this == o) return true;</span>
+<span class="pc bpc" id="L23" title="2 of 4 branches missed.">        if (o == null || getClass() != o.getClass()) return false;</span>
+<span class="fc" id="L24">        Company company = (Company) o;</span>
+<span class="fc" id="L25">        return Objects.equals(name, company.name);</span>
+    }
+
+    @Override
+    public int hashCode() {
+<span class="nc" id="L30">        return Objects.hash(name);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

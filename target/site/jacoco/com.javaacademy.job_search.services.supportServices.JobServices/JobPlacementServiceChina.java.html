@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>JobPlacementServiceChina.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">job_search</a> &gt; <a href="index.source.html" class="el_package">com.javaacademy.job_search.services.supportServices.JobServices</a> &gt; <span class="el_source">JobPlacementServiceChina.java</span></div><h1>JobPlacementServiceChina.java</h1><pre class="source lang-java linenums">package com.javaacademy.job_search.services.supportServices.JobServices;
+
+import com.javaacademy.job_search.services.supportServices.JobPlacementServiceTools.Company;
+import com.javaacademy.job_search.services.supportServices.JobPlacementServiceTools.Vacancy;
+import lombok.Getter;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Service;
+
+import java.math.BigDecimal;
+import java.util.LinkedHashMap;
+import java.util.List;
+
+@Service
+@Profile(&quot;china&quot;)
+<span class="fc" id="L16">public class JobPlacementServiceChina extends JobPlacementService{</span>
+<span class="fc" id="L17">    @Getter</span>
+    @Value(&quot;${currency}&quot;)
+    private String currency;
+<span class="fc" id="L20">    private LinkedHashMap&lt;String, Company&gt; companies = new LinkedHashMap&lt;&gt;();</span>
+
+    public Company createCompany(String name) {
+<span class="fc" id="L23">        Company company = new Company(name);</span>
+<span class="fc" id="L24">        companies.put(name, company);</span>
+<span class="fc" id="L25">        return company;</span>
+    }
+
+    @Override
+    public void createVacansy(Company company, String positions, String description, BigDecimal salary) {
+<span class="fc" id="L30">        company.createVacancy(positions, description, salary, this.currency);</span>
+<span class="fc" id="L31">    }</span>
+
+    public List&lt;Vacancy&gt; getCompanyVacancy(Company company) {
+<span class="fc" id="L34">        return company.getVacancies();</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

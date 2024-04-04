@@ -1,0 +1,10 @@
+com\javaacademy\job_search\services\supportServices\JobPlacementServiceTools\Company.class
+com\javaacademy\job_search\services\supportServices\JobServices\JobPlacementServiceChina.class
+com\javaacademy\job_search\services\supportServices\ResumePlacementServiceTools\User.class
+com\javaacademy\job_search\services\supportServices\ResumePlacementServiceTools\Resume.class
+com\javaacademy\job_search\services\supportServices\ResumePlacementService.class
+com\javaacademy\job_search\services\JobSearchService.class
+com\javaacademy\job_search\Runner.class
+com\javaacademy\job_search\services\supportServices\JobServices\JobPlacementService.class
+com\javaacademy\job_search\services\supportServices\JobServices\JobPlacementServiceJapan.class
+com\javaacademy\job_search\services\supportServices\JobPlacementServiceTools\Vacancy.class

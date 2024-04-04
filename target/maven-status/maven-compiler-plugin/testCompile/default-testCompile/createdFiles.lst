@@ -1,0 +1,6 @@
+com\javaacademy\job_search\RunnerJapanTests.class
+com\javaacademy\job_search\unit_tests\JobSearchServiceTest.class
+com\javaacademy\job_search\unit_tests\JobPlacementServiceJapanTest.class
+com\javaacademy\job_search\unit_tests\JobPlacementServiceChinaTest.class
+com\javaacademy\job_search\unit_tests\ResumePlacementServiceTest.class
+com\javaacademy\job_search\RunnerChinaTests.class

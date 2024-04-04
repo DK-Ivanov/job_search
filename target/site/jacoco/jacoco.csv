@@ -1,0 +1,10 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+job_search,com.javaacademy.job_search.services.supportServices.ResumePlacementServiceTools,User,48,41,7,7,6,5,12,2,5,2
+job_search,com.javaacademy.job_search.services.supportServices.ResumePlacementServiceTools,Resume,32,37,5,5,4,5,9,2,4,2
+job_search,com.javaacademy.job_search.services.supportServices.JobServices,JobPlacementServiceJapan,0,35,0,0,0,9,0,5,0,5
+job_search,com.javaacademy.job_search.services.supportServices.JobServices,JobPlacementService,0,3,0,0,0,1,0,1,0,1
+job_search,com.javaacademy.job_search.services.supportServices.JobServices,JobPlacementServiceChina,0,35,0,0,0,9,0,5,0,5
+job_search,com.javaacademy.job_search.services.supportServices.JobPlacementServiceTools,Vacancy,52,55,7,7,6,5,13,2,6,2
+job_search,com.javaacademy.job_search.services.supportServices.JobPlacementServiceTools,Company,18,47,4,4,1,8,5,4,1,4
+job_search,com.javaacademy.job_search.services.supportServices,ResumePlacementService,0,39,0,0,0,9,0,4,0,4
+job_search,com.javaacademy.job_search.services,JobSearchService,0,44,0,0,0,9,0,7,0,7
